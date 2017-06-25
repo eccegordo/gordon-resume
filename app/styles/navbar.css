@@ -1,0 +1,46 @@
+nav {
+  background: #94aacc;
+  padding: 1em;
+  text-align: center;
+}
+nav ul {
+  padding: 0;
+  padding-left: 80px;
+}
+nav li {
+  display: inline-block;
+  font-size: 1.4em;
+  padding: .25em 1em;
+  text-transform: uppercase;
+}
+
+nav li:not(:last-child) {
+  border-right: 2px solid #afc8f3;
+}
+nav li:first-child {
+  color: #dde9ef;
+}
+
+nav a {
+  border-bottom: 3px solid #6d7d98;
+  color: #dde9ef;
+  text-decoration: none;
+}
+nav a:hover {
+  border-bottom: 3px solid #afc8f3;
+}
+
+nav a.active {
+  border-bottom: 3px solid #afc8f3;
+  color: #6d7d98;
+}
+
+nav .avatar-item {
+    position: absolute;
+    left: 40px;
+    background: url(https://avatars2.githubusercontent.com/u/497659?v=3&s=96) 0 0;
+    height: 96px; 
+    width: 96px;
+    border-radius: 50%;
+}
+
