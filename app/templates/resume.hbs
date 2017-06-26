@@ -1,61 +1,89 @@
 {{#x-grid as |g| }}
   {{#g.cell col=6}}
-    <h2>Profile</h2>
+    {{x-heading tagName="h4" t="title" value="Profile"}}
      I am a web developer with experience building websites and web based applications. I have been building for the web since 1997.
   {{/g.cell}}
   {{#g.cell col=6}}
-    <h2>Current Skills and Interests</h2>
+    {{x-heading tagName="h4" t="title" value="Education"}}
+    University of Washington - B.A. (Comparative History of Ideas) 2000
+  {{/g.cell}}
+
+
+  {{#g.cell col=12}}
+    {{x-heading tagName="h4" t="title" value="Current Skills and Interests"}}
     {{#x-grid as |g| }}
-      {{#g.cell col=6}}
-        Frontend
-        <ul>
-          <li>JavaScript</li>
-          <li>Ember JS</li>
-          <li>ES2016</li>
-          <li>HTML</li>
-          <li>SASS/CSS</li>
-          <li>Open Source Web Frameworks</li>
-        </ul>
+      {{#each skills as |skill|}}
+        {{#g.cell col=2}}
+          {{skill}}
+        {{/g.cell}}
+      {{/each}}
+    {{/x-grid}}
+
+    {{x-heading tagName="h4" t="title" value="Experience"}}
+
+    {{#x-grid as |g| }}
+      {{#g.cell col=3}}
+        {{x-heading tagName="div" t="title" value="DELL EMC, Isilon"}}
+        {{x-heading tagName="div" t="subheading" value="Principle Developer"}}
+        {{x-heading tagName="div" t="subheading" value="2012–PRESENT"}}
       {{/g.cell}}
-      {{#g.cell col=6}}
-        Backend
-        <ul>
-          <li>Ruby</li>
-          <li>Rails</li>
-          <li>Node.js</li>
-          <li>Python</li>
-          <li>PHP</li>
-        </ul>
+      {{#g.cell col=9}}
+        I build and maintain a Ruby on Rails and Ember JS application to size configurations of Isilon’s scale out NAS platform. 
+        This web based application supports an international sales organization across DELL EMC. 
+        Users are able to select and accurately configure enterprise NAS solutions from a potential 
+        pool of millions of permutations. I took a 1.0 application and oversaw its evolution to its 
+        current 3.0 release with a very small, agile team. I work with diverse stakeholders including 
+        sales, engineering, and marketing to define Isilon NAS sizing needs and implement a complex 
+        array of features and requirements.
+      {{/g.cell}}
+
+      {{#g.cell col=3}}
+        {{x-heading tagName="div" t="title" value="COMM/NET Systems Inc"}}
+        {{x-heading tagName="div" t="subheading" value="Web Developer"}}
+        {{x-heading tagName="div" t="subheading" value="2010-2012"}}
+      {{/g.cell}}
+      {{#g.cell col=9}}
+        Web development, and embedded C development. In this role I served in many capacities 
+        including marketing web producer, IT, and software engineering. I was responsible for 
+        revamping their corporate website. I worked to bring in house their Lexan nameplate and 
+        label production with automated processes and scripting tools for Adobe Illustrator. 
+        I also worked with engineering staff to develop web interfaces for an Embedded C environment 
+        and customer hardware solutions using Digi/NET+OS
+      {{/g.cell}}
+
+      {{#g.cell col=3}}
+        {{x-heading tagName="div" t="title" value="Tapintu Inc"}}
+        {{x-heading tagName="div" t="subheading" value="Web Developer"}}
+        {{x-heading tagName="div" t="subheading" value="2008-2009"}}
+      {{/g.cell}}
+      {{#g.cell col=9}}
+        Built a Rich Internet Application (RIA) software platform for managing and 
+        delivering proprietary psychology assessment technology owned by Tapintu. Inc. 
+        The platform consisted of assessment application, administration console, and 
+        multi-tiered user account system where privileged users could review and assign 
+        assessment objects to other users.
+      {{/g.cell}}
+
+      {{#g.cell col=3}}
+        {{x-heading tagName="div" t="title" value="Lockdown Networks"}}
+        {{x-heading tagName="div" t="subheading" value="Web Developer"}}
+        {{x-heading tagName="div" t="subheading" value="2007-2008"}}
+      {{/g.cell}}
+      {{#g.cell col=9}}
+        PHP Web Developer and Consultant to Seattle based startup Lockdown Networks, 
+        a creator of Network Access Control (NAC) solutions. 
+        In this role I completed two redesigns of the company's website.
+      {{/g.cell}}
+      <hr>
+      {{#g.cell col=3}}
+        {{x-heading tagName="div" t="title" value="Sun Microsystems / Cobalt Networks / Chili!Soft"}}
+        {{x-heading tagName="div" t="subheading" value="Web Developer"}}
+        {{x-heading tagName="div" t="subheading" value="2000-2007"}}
+      {{/g.cell}}
+      {{#g.cell col=9}}
+        Webmaster, Technical Documentation, and Enterprise Intranet IT Web Developer.
       {{/g.cell}}
     {{/x-grid}}
-  {{/g.cell}}
-
-
-  {{#g.cell col=12}}
-    <h2>Experience</h2>
-  {{/g.cell}}
-  {{#g.cell col=12}}
-    <h3>Principle Developer DELL EMC ISILON <a href="http://www.emc.com/isilon/">WWW.EMC.COM/ISILON</a> — 2012–PRESENT</h3>
-    I build and maintain a Ruby on Rails and Ember JS application to size configurations of Isilon’s scale out NAS platform. This web based application supports an international sales organization across EMC. Users are able to select and accurately configure enterprise NAS solutions from a potential pool of millions of permutations. I took a 1.0 application and oversaw its evolution to its current 2.5 release with a very small, agile team. I work with diverse stakeholders including sales, engineering, and marketing to define Isilon NAS sizing needs and implement a complex array of features and requirements.
-
-    <h3>COMM/NET Systems Inc <a href="http://www.commnetsystems.com">WWW.COMMNETSYSTEMS.COM</a> — 2010-2012</h3>
-    Web development, and embedded C development. In this role I served in many capacities including marketing web producer, IT, and software engineering. I was responsible for revamping their corporate website. I worked to bring in house their Lexan nameplate and label production with automated processes and scripting tools for Adobe Illustrator. I also worked with engineering staff to develop web interfaces for an Embedded C environment and customer hardware solutions using Digi/NET+OS
-
-    <h3>Tapintu Inc <a href="http://www.tapintu.com">WWW.TAPINTU.COM</a> — 2008-2009</h3>
-    Built a Rich Internet Application (RIA) software platform for managing and delivering proprietary psychology assessment technology owned by Tapintu. Inc. The platform consisted of assessment application, administration console, and multi-tiered user account system where privileged users could review and assign assessment objects to other users.
-
-    <h3>Lockdown Networks — 2007-2008</h3>
-    PHP Web Developer and Consultant to Seattle based startup Lockdown Networks, a creator of Network Access Control (NAC) solutions.
-
-    <h3>Sun Microsystems / Cobalt Networks / Chili!Soft — 2000-2007</h3>
-    Webmaster, Technical Documentation, and Enterprise Intranet IT Web Developer.
-  {{/g.cell}}
-
-  {{#g.cell col=12}}
-    <h2>Education</h2>
-  {{/g.cell}}
-  {{#g.cell col=12}}
-    UNIVERSITY OF WASHINGTON — B.A. COMPARATIVE HISTORY OF IDEAS 2000 
   {{/g.cell}}
 
 {{/x-grid}}

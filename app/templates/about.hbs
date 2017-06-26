@@ -1,10 +1,14 @@
 {{#x-grid as |g| }}
   {{#g.cell col=12}}
-    <h2>About Me</h2>
-  {{/g.cell}}
-  {{#g.cell col=12}}
+    {{x-heading tagName="h4" t="title" value="About Me"}}
     My name is Gordon Potter. I am a software engineer, that specializes in web applications. I live in Seattle, Washington. 
-
     I am always interested in creative projects and work.
   {{/g.cell}}
+  {{#g.cell col=12}}
+    {{x-heading tagName="h4" t="title" value="Interests"}}
+    I am really passionate about the possibilities of the web and what can be built using standardized web technologies.
+    I have been a working web developer for many years while the web has grown around me.
+    These days I am active in the Ember JS open source community and a co-organizer of the local Seattle Ember JS Meetup. 
+  {{/g.cell}}
+
 {{/x-grid}}
