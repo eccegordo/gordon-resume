@@ -1,0 +1,5 @@
+.portfolio-preview-thumb {
+  border-radius: 50%;
+  border: 2px solid #afc8f3;
+  /*box-shadow: 1px 4px 10px rgba(0, 0, 0, .5);*/
+}

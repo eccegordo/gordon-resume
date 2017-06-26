@@ -1,0 +1,23 @@
+.hide {
+	display: none;
+}
+
+#navcontainerouter {
+	background: transparent url(../images/ie/logoheader.gif) no-repeat;
+}
+
+#navcontainer {
+	background: none;
+}
+
+#navlinks a:hover
+{
+background: transparent url(../images/ie/transparent_menubg.gif) repeat;
+color: #FFF;
+}
+
+#navlinks a:link, #navlinks a:visited
+{
+color: #FFF;
+text-decoration: none;
+}

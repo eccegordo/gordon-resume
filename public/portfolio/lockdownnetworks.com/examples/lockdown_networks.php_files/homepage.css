@@ -1,0 +1,128 @@
+/* Lockdown Networks Style Sheet Homepage Specific Styles*/
+
+#newsticker ul {
+	list-style: none;
+	list-style-type:none
+	padding: 5px 5px 2px;
+	text-align: right;
+}
+
+
+#newsfeed {
+	background:#FFF;
+	padding: 10px;
+	text-align: right;
+}
+
+
+/* TABLE CSS LAYOUT*/
+
+
+
+#homepagetable {
+	width: 820px;
+	padding: 0;
+	margin: 0;
+}
+
+#homepagetable th {
+	padding: 12px 6px 20px 6px;	
+}
+
+#homepagetable td {
+	vertical-align:top;
+	text-align: left;
+	width: 140px;
+	padding: 6px 6px 6px 12px;
+}
+/*
+
+#homepagetable td {
+	vertical-align:top;
+	text-align: left;
+	width: 140px;
+	padding: 6px 6px 6px 12px;
+}
+
+ th.leftedge {
+	text-align: center;
+	padding: 12px 6px 20px 6px;	
+}
+
+ th.rightedge {
+	text-align: center;
+	padding: 12px 6px 20px 6px;	
+}
+
+ td.leftedge {
+	vertical-align:top;
+	text-align: left;
+	width: 140px;
+	padding: 6px 6px 6px 12px;
+}
+
+ td.rightedge {
+	vertical-align:top;
+	text-align: left;
+	width: 140px;
+	padding: 6px 6px 6px 12px;
+}
+
+*/
+
+
+
+
+
+/* TABLE CSS Color */
+
+
+
+#homepagetable th {
+	color: #333;
+	background: #FFF;
+	background-image: url(../images/lockdown_tbl_header_yellow.png);
+	background-repeat: repeat-x;
+	border-left: 1px solid #685E53;
+	border-right: 1px solid #685E53;
+	
+}
+
+#homepagetable td {
+	background: #fff;
+	border-left: 1px solid #685E53;
+	border-right: 1px solid #685E53;
+}
+
+ th.leftedge {
+	color: #333;
+	background: #FFF;
+	background-image: url(../images/lockdown_tbl_header_yellow.png);
+	background-repeat: repeat-x;
+	border-left: 0px solid #685E53;
+	border-right: 1px solid #685E53;
+	
+}
+
+ th.rightedge {
+	color: #333;
+	background: #FFF;
+	background-image: url(../images/lockdown_tbl_header_yellow.png);
+	background-repeat: repeat-x;
+	border-left: 1px solid #685E53;
+	border-right: 0px solid #685E53;
+	
+}
+
+ td.leftedge {
+	background: #fff;
+	border-left: 0px solid #685E53;
+	border-right: 1px solid #685E53;
+}
+
+ td.rightedge {
+	background: #fff;
+	border-left: 1px solid #685E53;
+	border-right: 0px solid #685E53;
+}
+

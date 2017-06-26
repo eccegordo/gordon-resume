@@ -1,0 +1,130 @@
+#navcontainerouter {
+	position: absolute; 
+	top: 140px; 
+	left: 0; 
+	width: 321px;
+	height: 370px;
+	margin-left: 0px;
+	background: transparent url(../images/logoheader.png) no-repeat;
+}
+
+#navcontainer {
+	position: absolute; 
+	top: 0px; 
+	left: 0; 
+	width: 321px;
+	height: 450px;
+}
+
+
+#navheader {
+	position: absolute; 
+	top: 5px; 
+	left: 0px; 
+	display: block;
+	height: 510;
+	display: inline;
+	background: none;
+	z-index: 10;
+}
+
+#navheaderlinks {
+	display: inline;	
+	font-size:130%;	
+}
+
+#tabsales {
+	margin-left: 15px;	
+}
+
+#tabse {
+	margin-left: 30px;	
+}
+
+
+#navheaderlinks h2 {
+	float: left;
+	font-size:115%;
+	height: 35px;
+}
+
+#navheaderlinks h2 a {
+   display: block;
+   color: white;
+   text-decoration: none;
+	text-align: center;
+}
+
+#navheader ul
+{
+margin-left: 0;
+padding-left: 0;
+list-style-type: none;
+display: inline;
+}
+
+#navheader a
+{
+display: inline;
+padding: 3px;
+background: none;
+}
+
+#navlinks {
+	position: relative;
+	width: 218px;
+	top: 24px;
+	left: 0px;
+	background: none;
+}
+
+#navlinks a
+{
+display: block;
+margin-bottom: 5px;
+width: 180px;
+padding: 8px;
+background: none;
+}
+
+#navlinks a:link, #navlinks a:visited
+{
+color: #EEE;
+text-decoration: none;
+}
+
+#navlinks a:hover
+{
+background: transparent url(../images/menuhover.png) repeat;
+color: #FFF;
+}
+
+.linktitle {display: none;}
+
+.bubbleInfo {
+    position: relative;
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+    width: 250;
+	font-size:130%;	
+}
+
+.bubbleInfoIcon {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    width: 250;
+	font-size:130%;	
+}
+
+.popup {
+    left: 300px;
+    position: absolute;
+    display: none; /* keeps the popup hidden if no JS available */
+	background: transparent url(../images/menuhover.png) repeat;
+	color: #FFF;
+	width: 250px;
+	padding: 5px;
+	border: 1px solid #2f80d1;
+}
