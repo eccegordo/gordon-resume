@@ -3,9 +3,9 @@
   {{#g.cell col=8}}
     {{#x-grid as |g| }}
       {{#each portfolioData.items as | item |}}
-        {{#g.cell col=2}}
+        {{#g.cell col=4}}
             {{#link-to "portfolio.show" item.id}}
-              <img src='{{item.imagePath}}' width='100px' height="100px" class="portfolio-preview-thumb" />
+              <img src='{{item.imagePath}}' width='200px' height="200px" class="portfolio-preview-thumb" />
             {{/link-to}}
         {{/g.cell}}
       {{/each}}
