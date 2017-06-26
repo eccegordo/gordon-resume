@@ -1,0 +1,19 @@
+
+
+{{#x-grid as |g| }}
+  {{#g.cell col=2}}{{/g.cell}}
+  {{#g.cell col=8}}
+    {{#x-grid as |g| }}
+      {{#g.cell col=2}}
+            <img src='{{model.imagePath}}' width='100px' height="100px" class="portfolio-preview-thumb" />
+      {{/g.cell}}
+      {{#g.cell col=10}}
+        {{markdown-file
+          url=model.aboutPath
+          style='github'
+        }}
+      {{/g.cell}}
+    {{/x-grid}}  
+  {{/g.cell}}
+  {{#g.cell col=2}}{{/g.cell}}
+{{/x-grid}}

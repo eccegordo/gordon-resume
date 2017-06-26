@@ -1,0 +1,15 @@
+{{#x-grid as |g| }}
+  {{#g.cell col=2}}{{/g.cell}}
+  {{#g.cell col=8}}
+    {{#x-grid as |g| }}
+      {{#each portfolioData.items as | item |}}
+        {{#g.cell col=2}}
+            {{#link-to "portfolio.show" item.id}}
+              <img src='{{item.imagePath}}' width='100px' height="100px" class="portfolio-preview-thumb" />
+            {{/link-to}}
+        {{/g.cell}}
+      {{/each}}
+    {{/x-grid}}  
+  {{/g.cell}}
+  {{#g.cell col=2}}{{/g.cell}}
+{{/x-grid}}

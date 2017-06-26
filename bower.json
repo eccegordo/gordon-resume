@@ -1,0 +1,6 @@
+{
+  "name": "gordon-resume",
+  "dependencies": {
+    "showdown": "^1.4.0"
+  }
+}

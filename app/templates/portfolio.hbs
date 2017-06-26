@@ -1,17 +1,1 @@
 {{outlet}}
-
-
-{{#x-grid as |g| }}
-  {{#g.cell col=2}}{{/g.cell}}
-  {{#g.cell col=8}}
-    {{#x-grid as |g| }}
-      {{#each portfolioData.imagePaths as | path |}}
-        {{#g.cell col=2}}
-            
-              <img src='{{path}}' width='100px' height="100px" class="portfolio-preview-thumb" />
-        {{/g.cell}}
-      {{/each}}
-    {{/x-grid}}  
-  {{/g.cell}}
-  {{#g.cell col=2}}{{/g.cell}}
-{{/x-grid}}
