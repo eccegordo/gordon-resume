@@ -22,3 +22,4 @@ The API was written as a Ruby on Rails application with various inbound data imp
 
 Frontend JavaScript app built on Ember JS. The application was released with Ember 1.0 in 2013 and has been continuously maintained and upgraded to the latest stable release of Ember.
 
+Built standalone UI library in Javascript following Material Design principles and conventions.
