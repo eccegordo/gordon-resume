@@ -6,11 +6,15 @@ import Ember from 'ember';
 export default Ember.Service.extend({
   porfolioPublicPathPrefix: 'portfolioFiles/',
   items: Ember.A([
-    // { 
-    //   id: 'dellemc',
-    //   aboutPath: '../portfolio/dellemc/about.md',
-    //   imagePaths: Ember.A([ '../portfolio/dellemc/img1.jpg'  ])
-    // },
+    { 
+      id: 'dellemc',
+      imagePaths: Ember.A([ 
+        'img1.jpg',
+        'img2.jpg',
+        'img3.jpg',
+        'img4.jpg',
+        ])
+    },
     { 
       id: 'isilon',
       imagePaths: Ember.A([ 
