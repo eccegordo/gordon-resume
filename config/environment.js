@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'gordon-resume',
     environment: environment,
-    rootURL: '/',
+    rootURL: '/site/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
