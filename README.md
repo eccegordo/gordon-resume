@@ -1,7 +1,10 @@
 # gordon-resume
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+An ember JS mini application for my resume and personal portfolio website.
+
+This is an experiment in building static site with Ember and exploring some of the challenges of using ember for that purpose.
+
+To see site go to [http://www.gordonpotter.com/](http://www.gordonpotter.com/)
 
 ## Prerequisites
 
