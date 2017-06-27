@@ -1,19 +1,27 @@
-
-
 {{#x-grid as |g| }}
   {{#g.cell col=2}}{{/g.cell}}
   {{#g.cell col=8}}
     {{#x-grid as |g| }}
       {{#g.cell col=2}}
-            <img src='{{model.imagePath}}' width='100px' height="100px" class="portfolio-preview-thumb" />
+            <img src='{{pathPrefix}}{{model.imagePaths.firstObject}}' width='100px' height="100px" class="portfolio-preview-thumb" />
       {{/g.cell}}
       {{#g.cell col=10}}
         {{markdown-file
-          url=model.aboutPath
+          url=aboutPath
           style='github'
         }}
       {{/g.cell}}
     {{/x-grid}}  
   {{/g.cell}}
   {{#g.cell col=2}}{{/g.cell}}
+{{/x-grid}}
+
+{{#x-grid as |g| }}
+  {{#each model.imagePaths as | imagePath |}}
+    {{#g.cell col=12}}
+        {{#link-to "portfolio.show" item.id}}
+          <img src='{{pathPrefix}}/{{item.id}}/{{imagePath}}' class="portfolio-image" />
+        {{/link-to}}
+    {{/g.cell}}
+  {{/each}}
 {{/x-grid}}

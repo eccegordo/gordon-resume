@@ -28,7 +28,3 @@ Custom CSS and HTML based design work.
 I worked for the marketing department of Lockdown Networks on a consultant basis. I provide design and development services. Additionally, I provide collateral production services to create product photography, using professional SLR digital camera and Photoshop.
 
 The Lockdown Networks company is no longer operational. The website at www.lockdownnetworks.com is no longer active. Standalone examples of the Home and Product pages are available as part of this portfolio.
-
-Lockdown Networks Homepage example.
-
-Lockdown Networks Product page example.

@@ -5,7 +5,7 @@
       {{#each portfolioData.items as | item |}}
         {{#g.cell col=4}}
             {{#link-to "portfolio.show" item.id}}
-              <img src='{{item.imagePath}}' width='200px' height="200px" class="portfolio-preview-thumb" />
+              <img src='{{pathPrefix}}/{{item.id}}/{{item.imagePaths.firstObject}}' width='200px' height="200px" class="portfolio-preview-thumb" />
             {{/link-to}}
         {{/g.cell}}
       {{/each}}
