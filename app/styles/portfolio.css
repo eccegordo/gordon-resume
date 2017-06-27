@@ -13,3 +13,24 @@
   margin-bottom: 1em;
 	display: block;
 }
+
+
+a.contact-link:link {
+    color: #6d7d98;
+    text-decoration: none;
+}
+
+a.contact-link:visited {
+    color: #6d7d98;
+    text-decoration: none;
+}
+
+a.contact-link:hover {
+    color: #afc8f3;
+    text-decoration: none;
+}
+
+a.contact-link:active {
+    color: blue;
+    text-decoration: none;
+}

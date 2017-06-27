@@ -1,1 +1,45 @@
-{{outlet}}
+
+
+{{#x-grid as |g| }}
+  {{#g.cell col=2}}{{/g.cell}}
+  {{#g.cell col=8}}
+    {{#x-grid as |g| }}
+      {{#each contactMethods as | method |}}
+        {{#g.cell col=4}}
+          <a href="{{method.url}}" class="contact-link">
+          {{x-heading tagName="h4" t="title" value=method.title}}
+          {{fa-icon method.icon size=3}}
+          {{x-heading tagName="div" t="subheading" value=method.handle}}
+          {{x-heading tagName="div" t="subheading" value=method.url}}
+          </a>
+        {{/g.cell}}
+      {{/each}}
+    {{/x-grid}} 
+
+    {{x-heading tagName="h4" t="title" value="A note for recruiters"}}
+    Among the developer community, recruiters get a bad reputation. 
+    Maybe this is because software engineering is a very in demand skill and
+    therefore engineers who are employed feel complacent and dismissive of the efforts of
+    recruiters reaching out. I don't share this attitude. But I do understand where it 
+    is comes from. Personally I have felt grateful for every job opportunity that has come my way.
+    <br>
+    <br>
+    It is nice to be valued. But it is also true that in our hectic and busy work-a-day lives there is
+    little time to filter through all the noise. Even if I am gainfully employed I am always interested
+    to learn about new opportunities. That dream career could just be around the next corner. Maybe I am
+    in my dream career currently. It is not always easy to know for certain.
+    <br>
+    <br>
+    So a little free advice. Please do reach out to me I am interested in what you might have to say.
+    But also help me, go the extra mile and tell me something unique and interesting about the job prospect.
+    Form letter type submissions don't typically get through my busy filter of life. But I do read the emails,
+    so tell me something interesting. This is just as much about me trying to impress you with my skills and 
+    experience, as it is about you trying to impress me with the career or job prospect.
+    <br>
+    <br>
+    Sincerely,
+    <br>
+    Gordon Potter
+  {{/g.cell}}
+  {{#g.cell col=2}}{{/g.cell}}
+{{/x-grid}}
